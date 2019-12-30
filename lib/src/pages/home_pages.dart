@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   final textStyle = new TextStyle(fontSize: 25);
+  final counter = 10;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +19,7 @@ class HomePage extends StatelessWidget {
               style: textStyle,
             ),
             Text(
-              '0',
+              '$counter',
               style: textStyle,
             )
           ],
