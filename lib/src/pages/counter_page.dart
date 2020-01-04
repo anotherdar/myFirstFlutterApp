@@ -39,7 +39,7 @@ class _CounterPageState extends State<CounterPage> {
       mainAxisAlignment: MainAxisAlignment.end,
       children: <Widget>[
         SizedBox(
-          width: 30,
+          width: 30.0,
         ),
         FloatingActionButton(
           child: Icon(Icons.exposure_zero),
@@ -72,8 +72,6 @@ class _CounterPageState extends State<CounterPage> {
   }
 
   void _reset() {
-    setState(() {
-      _counter = 0;
-    });
+    setState(() => _counter = 0);
   }
 }
